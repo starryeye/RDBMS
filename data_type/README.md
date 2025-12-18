@@ -1,0 +1,25 @@
+## 데이터 타입
+- 숫자 타입
+  - integer, int
+  - tinyint
+  - smallint
+  - mediumint
+  - bigint
+  - decimal, numeric
+  - bit
+  - float
+  - double
+- 문자열 타입
+  - varchar
+  - char
+  - text
+- 날짜 시간 타입
+  - date
+  - time
+  - datetime
+  - timestamp
+  - year
+- 기타 타입
+  - blob
+  - enum
+  - set
