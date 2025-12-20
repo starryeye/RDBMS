@@ -1,12 +1,14 @@
 -- datasource: my-rdbms-2
 
+
+
 -- DROP TABLE : 테이블 존재 자체를 삭제한다.
-
-
-DROP TABLE orders;
 -- orders 테이블 삭제
+DROP TABLE orders;
 
 
+
+-- TRUNCATE TABLE : 테이블의 구조는 남기고 내부 데이터만 삭제
 TRUNCATE TABLE orders;
 -- orders 테이블의 구조는 남기고 내부 데이터만 삭제
 -- DML, "DELETE FROM orders;" 와 결과물은 동일하지만, DELETE 문은 한줄씩 지우고 TRUNCATE 는 초기화 개념이라 TRUNCATE 가 훨씬 빠름

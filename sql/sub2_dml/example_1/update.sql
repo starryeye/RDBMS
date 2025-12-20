@@ -1,10 +1,12 @@
 -- datasource: my-rdbms-2
--- precondition: sql.sub1_ddl.example_1.create.sql 실행
+-- precondition:
+--      sql.sub1_ddl.example_1.create.sql 실행
+--      동일 패키지내 insert.sql 실행
 
 
 
 -- UPDATE
--- WHERE 문을 까먹을 경우 모든 컬럼에 대해 수정이 이루어지기 때문에 주의해야한다.
+-- WHERE 문을 까먹을 경우 모든 데이터에 대해 수정이 이루어지기 때문에 주의해야한다.
 --      UPDATE 문을 실행하기 전에 SELECT 문으로 변경한 후 변경 대상을 눈으로 확인하고 UPDATE 를 실행하는 습관이 중요하다.
 UPDATE products
 SET price = 9800, stock_quantity = 580
