@@ -27,5 +27,10 @@ INSERT INTO products (name, price, stock_quantity) VALUES
     ('긴팔 티셔츠', 30000, 50);
 
 
--- INSERT 방법 3,
+-- INSERT 방법 3, 여러개의 데이터를 하나의 SQL로 넣을 수 있다.
+INSERT INTO products (name, price, stock_quantity) VALUES
+    ('검정 양말', 5000, 100),
+    ('흰색 양말', 5000, 150),
+    ('회색 양말', 5000, 200);
+
 
