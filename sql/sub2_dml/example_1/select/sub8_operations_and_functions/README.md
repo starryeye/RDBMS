@@ -24,6 +24,7 @@
     - COALESCE
     - NULLIF (MySQL 전용 함수 IFNULL 과 다름)
   - 집계 함수 (Aggregate Functions)
+    - sub9_aggregate_and_grouping 에서 다룸
     - AVG
     - COUNT
     - MIN / MAX
