@@ -1,0 +1,112 @@
+## SQL 표준 함수
+- SQL 표준 함수
+  - 문자열 함수 (String Functions)
+    - UPPER / LOWER
+    - SUBSTRING
+    - TRIM
+    - POSITION
+    - CHAR_LENGHT
+  - 숫자 함수 (Numeric Functions)
+    - ABS
+    - MOD
+    - ROUND
+    - CEILING
+    - FLOOR
+    - SQRT
+    - POWER
+  - 날짜 및 시간 함수 (Date and Time Functions)
+    - CURRENT_DATE
+    - CURRENT_TIME
+    - CURRENT_TIMESTAMP
+    - EXTRACT
+  - 조건 및 변환 함수 (Conditional and Conversion Functions)
+    - CAST
+    - COALESCE
+    - NULLIF (MySQL 전용 함수 IFNULL 과 다름)
+  - 집계 함수 (Aggregate Functions)
+    - AVG
+    - COUNT
+    - MIN / MAX
+    - SUM
+
+## MySQL dialect 함수
+- https://dev.mysql.com/doc/refman/8.0/en/functions.html
+- MySQL dialect 함수
+  - 문자열 함수 (String Functions)
+    - CONCAT
+    - CONCAT_WS
+    - GROUP_CONCAT
+    - LPAD
+    - RPAD
+    - LEFT
+    - RIGHT
+    - INSTR
+    - LOCATE
+    - REPLACE
+    - FORMAT
+    - FIND_IN_SET
+    - SUBSTRING_INDEX
+    - SOUNDEX
+    - SPACE
+    - ELT
+    - FIELD
+  - 숫자 함수 (Numeric Functions)
+    - RAND
+    - TRUNCATE
+    - CEIL
+    - PI
+    - CRC32
+    - SIGN
+    - CONV
+  - 날짜 및 시간 함수 (Date and Time Functions)
+    - NOW
+    - SYSDATE
+    - DATE_FORMAT
+    - STR_TO_DATE
+    - DATEDIFF
+    - TIMEDIFF
+    - DATE_ADD
+    - DATE_SUB
+    - PERIOD_ADD
+    - PERIOD_DIFF
+    - TIMESTAMPDIFF
+    - LAST_DAY
+    - DAYOFWEEK
+    - WEEKDAY
+    - FROM_UNIXTIME
+    - UNIX_TIMESTAMP
+  - 흐름 제어 함수 (Flow Control Functions)
+    - IF
+    - IFNULL
+  - 윈도우 함수 (Window Functions)
+    - OVER() 절과 함께 사용되어 행의 집합(window) 내에서 연산을 수행
+    - ROW_NUMBER
+    - RANK
+    - DENSE_RANK
+    - NTILE
+    - LAG
+    - LEAD
+    - FIRST_VALUE / LAST_VALUE
+  - JSON 함수
+    - JSON 데이터를 생성, 파싱, 수정하는 함수이다. (MySQL 에서는 JSON 데이터를 지원한다.)
+    - JSON_OBJECT
+    - JSON_ARRAY
+    - JSON_EXTRACT
+    - JSON_SET
+    - JSON_INSERT
+    - JSON_REPLACE
+    - JSON_REMOVE
+    - JSON_CONTAINS
+    - JSON_SEARCH
+    - JSON_KEYS
+    - JSON_ARRAY_APPEND
+    - JSON_PRETTY
+    - JSON_VALID
+  - 기타 함수
+    - UUID
+    - INET_ATON / INET_NTOA
+    - INET6_ATON / INET6_NTOA
+    - GET_LOCK
+    - RELEASE_LOCK
+    - IS_FREE_LOCK
+    - FOUND_ROWS
