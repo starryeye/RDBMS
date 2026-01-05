@@ -1,5 +1,9 @@
 -- datasource: my-rdbms-3
 
+-- 테이블간 연관관계
+-- users (1) -----< orders (N) >----- products (1)
+-- employees (1) -----< employees (N)
+
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS products;
