@@ -9,6 +9,9 @@
 --      NULL 은 값이 존재하지 않는 것으로 어떠한 값으로써의 역할을 수행할 수 없다. (0 이나 '' 도 아니다.)
 --      예를 들면, 아래와 같이 description = NULL 의 결과는.. 설령 실제로 NULL 인 로우가 존재하더라도
 --          결과는 UNKNOWN 으로 참/거짓이 아니므로 결과의 로우에 포함되지 않는다.
+--      참고
+--          WHERE col IN (1, NULL) 이렇게 하면..
+--              (col = 1) OR (col = NULL) 와 동일하며, 결론적으로 col = 1 인 행만 반환된다.
 SELECT *
 FROM products
 WHERE description = NULL;
