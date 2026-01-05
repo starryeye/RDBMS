@@ -1,6 +1,7 @@
 ## SELECT 쿼리 실행 순서
 1. FROM
    - 조회 대상 테이블 선정
+   - JOIN 이 있다면, JOIN/ON 조건에 따라 가상 테이블을 선정한다.
 2. WHERE
    - 대상 테이블의 전체 row 대상으로 조건 필터링
 3. GROUP BY
