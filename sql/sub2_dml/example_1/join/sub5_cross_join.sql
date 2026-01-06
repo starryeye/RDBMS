@@ -11,6 +11,8 @@
 -- INNER JOIN, OUTER JOIN 의 경우는 ON 절을 통해 연결고리를 설정하여 짝을 지어주게된다.
 -- CROSS JOIN 은 ON 절 없이 가능한 모든 경우의 수로 짝을 지어준다.
 --      (A 테이블 row 수) * (B 테이블 row 수) 개가 반환된다.
+-- 참고.
+--      CROSS JOIN 은 모든 경우의 수를 만들어주기 때문에 실무에서 아주 유의해서 사용해야한다.
 
 -- Example 1.
 -- sizes 테이블 4개행 * colors 테이블 3개행
