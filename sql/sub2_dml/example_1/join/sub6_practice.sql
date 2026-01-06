@@ -29,5 +29,26 @@ JOIN
     products p ON o.product_id = p.product_id
 WHERE
     u.address LIKE '서울%' AND
+    o.order_date >= '2025-06-01' AND o.order_date < '2025-07-01';
+
+
+
+-- 참고
+-- 1. 위 쿼리와 결과는 동일하지만, WHERE 조건을 ON 절로 옮겼다.
+--      테이블 JOIN 전에 필터링 해주면 뭔가 더 성능상 좋지 않을까.. 라고 생각 할 수 있는데..
+--      DB 옵티마이져가 알아서 조정하여 실행하기 때문에 성능상 차이는 없다고 한다.
+-- 2. o.order_date >= '2025-06-01' AND o.order_date < '2025-07-01' 대신..
+--      BETWEEN 을 쓰면 좋지 않을까 생각할 수 있는데.. sub3_select_where.sql 의 4-3 예제 참조
+SELECT
+    u.user_id, u.name, u.email, u.address,
+    o.order_id, o.order_date, o.quantity,
+    p.product_id, p.name, p.price
+FROM
+    orders o
+JOIN
+    users u ON o.user_id = u.user_id AND u.address LIKE '서울%'
+JOIN
+    products p ON o.product_id = p.product_id
+WHERE
     o.order_date >= '2025-06-01' AND
     o.order_date < '2025-07-01';

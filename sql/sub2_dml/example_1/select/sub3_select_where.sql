@@ -48,6 +48,10 @@ WHERE price >= 5000 AND stock_quantity >= 50;
 SELECT *
 FROM products
 WHERE price BETWEEN 5000 AND 15000; -- WHERE price >= 5000 AND price <= 15000; 과 동일하다.
+-- 참고로.. 날짜를 BETWEEN 과 함께 사용하면.. 2025-06 월을 필터링 한다면 애매할 수 있음.
+--      왜냐하면, 작거나 같은 조건에서 2025-06-31 로 하면, DB 에서는 06-31 00:00:00 으로 하기 때문임..
+--      그렇다고해서 06-31 24:59:59 로 하면 59초 이후에도 시간이 분명히 1초가 있으므로.. 애매함..
+--      따라서, order_date >= 2025-06-01 AND order_date < 2025-07-01 로 해야함.
 
 SELECT *
 FROM products
