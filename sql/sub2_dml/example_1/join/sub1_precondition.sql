@@ -10,6 +10,7 @@ DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS sizes;
 DROP TABLE IF EXISTS colors;
+DROP TABLE IF EXISTS product_options;
 
 
 
@@ -71,7 +72,15 @@ CREATE TABLE colors (
     color VARCHAR(20) PRIMARY KEY
 );
 
+--
+CREATE TABLE product_options (
+    option_id BIGINT AUTO_INCREMENT,
+    product_name VARCHAR(255) NOT NULL,
+    size VARCHAR(10) NOT NULL,
+    color VARCHAR(20) NOT NULL,
 
+    PRIMARY KEY (option_id)
+);
 
 
 -- 고객 데이터 입력

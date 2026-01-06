@@ -34,3 +34,18 @@ INSERT INTO products (name, price, stock_quantity) VALUES
     ('회색 양말', 5000, 200);
 
 
+
+-- datasource: my-rdbms-3
+-- precondition:
+--      sql.sub2_dml.example_1.join.sub1_precondition.sql 실행
+
+-- INSERT 방법 4, SELECT 결과를 바로 INSERT 할 수 있다.
+INSERT INTO product_options (product_name, size, color)
+SELECT
+    CONCAT('기본티셔츠-', c.color, '-', s.size) AS product_name,
+    s.size,
+    c.color
+FROM
+    sizes AS s
+CROSS JOIN -- cross join 에 대해서는 join.sub5_cross_join.sql 참고
+    colors AS c;
