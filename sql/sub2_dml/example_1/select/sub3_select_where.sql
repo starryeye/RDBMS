@@ -44,7 +44,8 @@ WHERE price >= 5000 AND stock_quantity >= 50;
 --          BETWEEN, NOT BETWEEN
 --          IN,      NOT IN
 --          LIKE,    NOT LIKE
---          IS NULL, IS NOT NULL    NULL 에 대해서는 따로 설명(subX 에 존재)
+--          IS NULL, IS NOT NULL    NULL 에 대해서는 따로 설명(sub7_null.sql 에 존재)
+--          ALL, ANY                해당 연산자는 비교 연산자와 주로 사용되는데 MIN, MAX 로 대체하도록 해보자.. (sub1_subquery_2.sql 참조)
 SELECT *
 FROM products
 WHERE price BETWEEN 5000 AND 15000; -- WHERE price >= 5000 AND price <= 15000; 과 동일하다.
