@@ -76,6 +76,7 @@ WHERE
         );
 -- 집계함수 사용 버전 2
 -- 다만, WHERE 를 이용하는게 더 성능상 좋다. (sub5_having.sql 참고)
+--      왜냐하면, 모든 카테고리를 그룹으로 묶어놓고 패션 그룹만 사용하기 때문에 GROUP BY 의 의미가 없음..
 SELECT
     name,
     price
