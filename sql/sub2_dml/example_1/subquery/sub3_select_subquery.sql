@@ -44,6 +44,7 @@ SELECT
 FROM
     products p;
 -- 성능 좋은 JOIN 으로 변경
+-- 참고: 메인쿼리1회 실행
 SELECT
     p.*,
     COUNT(o.order_id) -- p.product_id 로 카운트 하면 주문이 없는 경우도 1로 카운트 된다.
