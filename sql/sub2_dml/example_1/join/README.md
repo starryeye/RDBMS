@@ -19,3 +19,8 @@
     - FROM 테이블에서 JOIN 테이블 방향으로 FK -> PK 라면, row 수가 늘어나지 않음
   - ToMany
     - FROM 테이블에서 JOIN 테이블 방향으로 PK -> FK 라면, row 수가 늘어난다.
+
+## 참고
+- INNER JOIN 절을 사용해놓고 SELECT 에서 JOIN 된 컬럼을 사용하지 않고 ON 절을 연관관계(PK, FK)가 아닌 필터링 의미에 가깝게 사용한다면.. 
+  - 사실상 WHERE 절과 의미가 비슷해지고 실제로 대체가 된다.
+  - sub4_table_subquery.sql 참고

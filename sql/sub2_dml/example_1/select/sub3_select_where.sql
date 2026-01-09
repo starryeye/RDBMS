@@ -78,3 +78,9 @@ WHERE name NOT LIKE 'A__'; -- A 뒤에 정확히 2글자가 아닌 문자열
 SELECT *
 FROM products
 WHERE description IS NOT NULL; -- NULL 값은 비교 연산자가 먹히지 않아서 따로 존재한다. (description != NULL 은 잘못된 문법임)
+
+
+-- 참고
+-- INNER JOIN 절을 사용해놓고 SELECT 에서 JOIN 된 컬럼을 사용하지 않고
+-- ON 절을 연관관계(PK, FK)가 아닌 필터링 의미에 가깝게 사용한다면.. 사실상 WHERE 절과 의미가 비슷해지고 실제로 대체가 된다.
+--      sub4_table_subquery.sql 참고
