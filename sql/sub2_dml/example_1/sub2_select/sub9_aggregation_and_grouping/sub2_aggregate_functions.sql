@@ -59,3 +59,7 @@ SELECT
     MAX(order_date) AS `최근 주문일`
 FROM
     order_stat;
+
+
+-- 4. 조건부 집계, 집계함수 안에 CASE 문을 사용하는 기법..
+--      sub4_case_and_aggregate_functions.sql 을 참고하자.

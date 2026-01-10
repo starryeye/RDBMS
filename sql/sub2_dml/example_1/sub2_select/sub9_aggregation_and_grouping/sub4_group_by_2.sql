@@ -54,3 +54,7 @@ SELECT
 FROM
     order_stat;
 
+
+
+-- 4. 데이터 값의 범위로 분류를 한다던가 커스텀 분류를 하고 싶다면..
+--      sub3_case_and_group_by.sql 을 참고해보자.
