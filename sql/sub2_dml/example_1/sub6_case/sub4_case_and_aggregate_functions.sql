@@ -57,6 +57,7 @@ FROM
 -- Example 2.
 -- 주문내역에서 주문된 상품의 카테고리별로 묶고 주문의 상태로 다시 분류하여 주문 건수를 집계
 SELECT
+    p.category,
     COUNT(*) AS total_orders,
     SUM(CASE WHEN o.status = 'COMPLETED' THEN 1 ELSE 0 END) AS completed_count,
     SUM(CASE WHEN o.status = 'SHIPPED' THEN 1 ELSE 0 END) AS shipped_count,
