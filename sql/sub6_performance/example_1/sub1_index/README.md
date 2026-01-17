@@ -26,3 +26,7 @@
         - 조인을 할 때 빠르게 처리하기 위함
       - 유니크 제약조건을 설정한 컬럼
         - 데이터 insert 시, 동일 데이터가 존재하는지 여부를 빠르게 확인해야하므로 생성됨.
+
+
+### 참고할만한 다른 예제
+- [mysql-performance-optimization](https://github.com/starryeye/mysql-performance-optimization) 참고
