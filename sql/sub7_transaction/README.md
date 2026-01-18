@@ -1,12 +1,15 @@
 ## Transaction
 - 트랜잭션이 필요한 이유
-- commit, rollback
+  - 데이터의 일관성을 지키기 위해서는..
+    - 상태가 항상 유효하도록 제약조건을 잘 만드는 것도 중요하지만..
+    - 데이터를 변경하면서 생기는 문제(동시성 문제와 도메인의 원자성 로직 필요)에 대해서도 기능이 필요함
+- start transaction, commit, rollback
 - MySQL 의 autocommit
 - 트랜잭션의 ACID
-  - Atomicity
-  - Consistency
-  - Isolation
-  - Durability
+  - 원자성 (Atomicity)
+  - 일관성 (Consistency)
+  - 격리성 (Isolation)
+  - 지속성 (Durability)
 - 트랜잭션 격리 수준
   - 격리 수준에 따른 동시성 문제
   - 각 DB 의 기본 격리 수준과 격리 수준 변경에 따른 고려사항
