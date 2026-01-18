@@ -1,0 +1,12 @@
+## Transaction
+- 트랜잭션이 필요한 이유
+- commit, rollback
+- MySQL 의 autocommit
+- 트랜잭션의 ACID
+  - Atomicity
+  - Consistency
+  - Isolation
+  - Durability
+- 트랜잭션 격리 수준
+  - 격리 수준에 따른 동시성 문제
+  - 각 DB 의 기본 격리 수준과 격리 수준 변경에 따른 고려사항

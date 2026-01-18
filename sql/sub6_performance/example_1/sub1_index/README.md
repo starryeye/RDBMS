@@ -32,6 +32,17 @@
 
 ### 더 자세한 내용은..
 - 학습 자료 직접 읽자
+  - 인덱스가 사용되는 case
+  - explain type 에 따른 실행 차이
+    - all, index, const, range, ref
+  - explain 의 filtered, extra 의미와 해석
+    - Using filesort / Using index
+  - 옵티마이저가 인덱스를 사용하는 조건
+  - 커버링 인덱스
+  - 복합 인덱스
+  - 복합 인덱스 설계와 주의사항
+  - 인덱스 설계법
+  - 인덱스 주의사항
 
 ### 참고할만한 다른 예제
 - [mysql-performance-optimization](https://github.com/starryeye/mysql-performance-optimization) 참고
